@@ -1,0 +1,90 @@
+import React, {useState} from 'react';
+import { Route, Switch } from "react-router-dom";
+import Header from './Header';
+import Home from './Home';
+import News from './News';
+import Entertainment from './Entertainment';
+import Footer from './Footer';
+import NewsDetail from './NewsDetail';
+import FestivalWish from './FestivalWish';
+
+import {NewsData} from '../content/news'
+import {ETNews} from '../content/etnews'
+import {SportsNews} from '../content/sportnews'
+import {BannerAd1} from '../content/imageAd1'
+import {FestivalMessage} from '../content/festival'
+import {HomeFeaturedPosts} from '../content/homeFeaturedPosts'
+
+const Main = () => {
+
+  const [news, setNews] = useState(NewsData);
+  const [ETnews, setETnews] = useState(ETNews);
+  const [SPnews, setSPnews] = useState(SportsNews);
+  const [ImgAd, setImgAd] = useState(BannerAd1);
+  const [FestivalMsg, setFestivalMsg] = useState(FestivalMessage);
+  const [HFP, setHFP] = useState(HomeFeaturedPosts);
+
+  const Homepage = () => {
+    return(
+      <Home news={news} etnews={ETnews} spnews={SPnews} imgad={ImgAd} featured={HFP} />
+    );
+  }
+  const Newspage = () => {
+    return(
+      <News pathValue='news' breadCrumbName='News' news={news}/>
+    );
+  }
+  const Entertainmentpage = () => {
+    return(
+      <News pathValue='entertainment' breadCrumbName='Entertainment' news={ETnews}/>
+    );
+  }
+  const Sportspage = () => {
+    return(
+      <News pathValue='sports' breadCrumbName='Sports' news={SPnews}/>
+    );
+  }
+
+  const NewsItem = ({match}) => {
+    return(
+      <NewsDetail pathValue='news' breadCrumbName='News' newsItem={news.filter((news) => news.id === parseInt(match.params.newsId,10))[0]} />
+    )
+  }
+
+  const EntertainmentItem = ({match}) => {
+    return(
+      <NewsDetail pathValue='entertainment' breadCrumbName='Entertainment' newsItem={ETnews.filter((ETnews) => ETnews.id === parseInt(match.params.entertainmentId,10))[0]} />
+    )
+  }
+
+  const SportsItem = ({match}) => {
+    return(
+      <NewsDetail pathValue='sports' breadCrumbName='Sports' newsItem={SPnews.filter((SPnews) => SPnews.id === parseInt(match.params.sportsId,10))[0]} />
+    )
+  }
+
+  const Festivalpage = () => {
+    return(
+      <FestivalWish festival={FestivalMsg} />
+    );
+  }
+
+  return (
+    <>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/news" component={Newspage} />
+        <Route path="/news/:newsId" component={NewsItem} />
+        <Route exact path="/sports" component={Sportspage} />
+        <Route path="/sports/:sportsId" component={SportsItem} />
+        <Route exact path="/entertainment" component={Entertainmentpage} />
+        <Route exact path="/happyvinayakachaturthi" component={Festivalpage} />
+        <Route path="/entertainment/:entertainmentId" component={EntertainmentItem} />
+      </Switch>
+      <Footer />
+    </>
+  )
+}
+
+export default Main

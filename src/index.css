@@ -1,14 +1,70 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+#root {
+  background-color: #f8f9fa !important;
+}
+a,p,div {
+  font-family: 'Roboto', sans-serif;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.navbar {
+position:fixed;
+top:0px;
+right:0px;
+left:0px;
+z-index:1030;
+}
+.nav-container {
+  margin-top:0px !important;
+}
+.navbar-brand {
+  font-size:28px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.carousel-item img{
+  width:100%;
+  height:356px;
+}
+.carousel-text {
+  display:block;
+  text-align:center;
+  color:#fff;
+}
+.carousel-text-h {
+  margin-top: 20%;
+}
+.headlineImg {
+  width:70px;
+  height:50px;
+  border-radius:5px;
+  margin:10px;
+}
+.headLineTextLink:hover {
+  text-decoration: none;
+}
+.headLineText {
+  text-decoration: none;
+  color: #212529;
+}
+.card {
+  margin-top:10px;
+}
+.featured-img {
+  width: 100%;
+  height: 180px;
+}
+.image-ad {
+  max-height: 179px;
+}
+.image-ad-desc {
+  padding-left:0px;
+}
+.banner-ad {
+  margin-bottom:20px;
+}
+.footer{
+  padding:20px;
+  bottom:0px;
+  width:100%;
+  background-color:#f5f5f5;
 }

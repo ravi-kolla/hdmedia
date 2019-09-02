@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import AdSense from 'react-adsense';
 import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 const NewsDetail = (props) => {
@@ -31,13 +30,6 @@ const NewsDetail = (props) => {
             </div>
           </Col>
           <Col md="4">
-            <AdSense.Google
-              client='ca-pub-8915459609879797'
-              slot='7806394673'
-              style={{ display: 'block', height: 300 }}
-              layout='in-article'
-              format='fluid'
-            />
           </Col>
         </Row>
       </Container>

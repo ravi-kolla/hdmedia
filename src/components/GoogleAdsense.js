@@ -3,7 +3,7 @@ import React, {useEffect} from 'react';
 const GoogleAdComponent = () => {
 
   useEffect(() => {
-    (adsbygoogle = window.adsbygoogle || []).push({
+    (window.adsbygoogle = window.adsbygoogle || []).push({
       google_ad_client: "ca-pub-8915459609879797",
       enable_page_level_ads: true
     });

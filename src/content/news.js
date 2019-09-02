@@ -1,13 +1,21 @@
 export const NewsData =
   [
     {
-      id: 3,
-      title: 'Chandrababu to start the district tour in Andhra Pradesh.',
+      id: 4,
+      title: 'Mr.Naidu wrote letter to CM Jagan regarding the current issues.',
       thumbnail: '/images/NaiduDp.PNG',
       image: '/images/NaiduDp.PNG',
-      description: 'Chandrababu to start the district tour in Andhra Pradesh and you know what, war is going to be one sided',
+      description: 'Mr.Naidu in his letter demands govt to clear pending farm loan waiver bills and also, questions about govt stand on capital city and regading the efforts taken for recent flood relief management.',
       author: 'Editorial Chief',
-      date: 'Sep 01, 2019'
+      date: 'Sep 02, 2019'
+    },{
+      id: 3,
+      title: 'Happy Birthday Pawan Kalyan.',
+      thumbnail: '/images/PavanDp.PNG',
+      image: '/images/PavanDp.PNG',
+      description: 'A great actor turned politician and a great humanitarian, we all wish him a happy birtday. We wish he plays a more constructive role in the politics.',
+      author: 'Editorial Chief',
+      date: 'Sep 02, 2019'
     },
     {
       id: 2,

@@ -1,6 +1,15 @@
 export const ETNews =
   [
     {
+      id: 4,
+      title: 'Saaho sets record high collections!',
+      thumbnail: '/images/saaho.jpg',
+      image: '/images/saaho.jpg',
+      description: 'Saaho, starring Prabhas and Shraddha Kapoor, released on August 30 amid much fanfare. The spy thriller is setting the box office on fire. It;s close to 300 mark by the end of third day.',
+      details:'According to trade analyst Joginder Tejuja, It’s simple - Critics’ views have had ZERO impact in the film. It’s audience word of mouth that will do the talking and so far it’s going excellent!',
+      author: 'Editorial Chief',
+      date: 'Sep 01, 2019'
+    },{
       id: 3,
       title: 'Dear Comrade is now available on Amazon prime',
       thumbnail: '/images/DearComradeAmazon.jpg',

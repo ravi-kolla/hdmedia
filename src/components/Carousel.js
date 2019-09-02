@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
+
 import {
   Carousel,
   CarouselItem,
@@ -15,7 +17,7 @@ const items = [
     title:'',
     description: '',
     button: 'Learn More',
-    link: '/happyvinayakachaturthi'
+    link: 'happyvinayakachaturthi'
   },
   {
     id: 2,
@@ -73,10 +75,12 @@ class CarouselComponent extends Component {
           key={item.id}
         >
           <img src={item.src} alt={item.altText} />
+          <Link to={`/${item.link}`}>
           <div className="card-img-overlay carousel-text d-md-block">
             <h3 className="carousel-text-h">{item.title}</h3>
             <p>{item.description}</p>
           </div>
+          </Link>
         </CarouselItem>
       );
     });

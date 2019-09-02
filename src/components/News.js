@@ -1,5 +1,6 @@
 import React from 'react';
 import NewsList from './NewsList';
+import GoogleAdComponent from './GoogleAdsense'
 import { Container, Row, Col } from 'reactstrap';
 
 const News = (props) => {
@@ -11,7 +12,7 @@ const News = (props) => {
           <NewsList pathvar={props.pathValue} pathname={props.breadCrumbName} newslist={props.news} />
         </Col>
         <Col md="4">
-          
+          <GoogleAdComponent />
         </Col>
       </Row>
     </Container>

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import GoogleAdComponent from './GoogleAdsense';
 import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 
 const NewsDetail = (props) => {
@@ -23,13 +24,14 @@ const NewsDetail = (props) => {
               <p class="card-text"><small class="text-muted">By {props.newsItem.author} - {props.newsItem.date}</small></p>
             </div>
             <img class="card-img-bottom" src={props.newsItem.image} alt="{props.newsItem.title}" />
+            <GoogleAdComponent />
             <div class="card-body">
               <p class="card-text">{props.newsItem.details}</p>
             </div>
           </div>
         </Col>
         <Col md="4">
-          
+          <GoogleAdComponent />
         </Col>
       </Row>
     </Container>

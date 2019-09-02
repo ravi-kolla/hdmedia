@@ -1,6 +1,15 @@
 export const ETNews =
   [
     {
+      id: 5,
+      title: 'Valmiki is set to release on Sep 20, 2019',
+      thumbnail: '/images/valmiki.jpg',
+      image: '/images/valmiki.jpg',
+      description: 'Valmiki is a remake version of Tamil blockbuster movie Jigarthanda and it is a gangster comedy entertainer directed by Harish Shankar and produced by Achanta Ramu, Achanta Gopinath under 14 Reels Plus banner.',
+      details:'The movie cast includes Varun Tej, Atharvaa Murali and Pooja Hegde while Mickey J Meyer scored music.',
+      author: 'Editorial Chief',
+      date: 'Sep 02, 2019'
+    },{
       id: 4,
       title: 'Saaho sets record high collections!',
       thumbnail: '/images/saaho.jpg',

@@ -28,7 +28,7 @@ export const HomeFeaturedPosts = [
           title: 'JioFiber will be available starting September 5.',
           alt: 'JioFiber offer',
           thumbnail: '/images/JioFiber.PNG',
-          image: '/images/JioFiber.PNG',
+          image: '/images/jio.jpg',
           description: 'JioFiber preview customers may get at least 2 months free services.',
           button: 'Jio Fiber',
           url: 'https://jiofiber.org/',

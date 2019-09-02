@@ -2,7 +2,7 @@ import React from 'react';
 
 const FestivalWish = (props) => {
   return(
-    <div class="card mb-3">
+    <div class="card all-news">
       <img class="card-img-top" src={props.festival.image} alt={props.festival.title} />
       <div class="card-body">
         <h5 class="card-title">{props.festival.title}</h5>

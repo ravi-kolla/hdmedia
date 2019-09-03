@@ -1,6 +1,14 @@
 export const NewsData =
   [
     {
+      id: 5,
+      title: 'New Governors were appointed for five States including Telangana.',
+      thumbnail: '/images/governors.jpg',
+      image: '/images/governors.jpg',
+      description: "The chief of the Tamil Nadu BJP, Dr Tamilisai Soundararajan and former Union minister Bandaru Dattatreya are on the list of five new Governors announced by President Ram Nath Kovind today. Dr Soundararajan has been appointed the Governor of Telangana - having a separate Governor is a first for the country's newest state. Bandaru Dattatreya has been put in charge of Himachal Pradesh, replacing Kalraj Mishra and Kalraj Mishra is transfered as Governor of Rajasthan. Bhagat Sing Koshyari former CM of Uttarakhand has been appointed as Maharashtra Governor and Arif Mohammmed Khan former union minsiter is apponted as Governor of Kerala.",
+      author: 'Editorial Chief',
+      date: 'Sep 02, 2019'
+    },{
       id: 4,
       title: 'Mr.Naidu wrote letter to CM Jagan regarding the current issues.',
       thumbnail: '/images/NaiduDp.PNG',

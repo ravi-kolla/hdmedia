@@ -17,6 +17,7 @@ export const ETNews =
       description: 'Saaho, starring Prabhas and Shraddha Kapoor, released on August 30 amid much fanfare. The spy thriller is setting the box office on fire. It;s close to 300 mark by the end of third day.',
       details:'According to trade analyst Joginder Tejuja, It’s simple - Critics’ views have had ZERO impact in the film. It’s audience word of mouth that will do the talking and so far it’s going excellent!',
       author: 'Editorial Chief',
+      urlname: 'Saaho-record-collections',
       date: 'Sep 01, 2019'
     },{
       id: 3,
@@ -26,6 +27,7 @@ export const ETNews =
       description: 'Dear Comrade is an intense love story between Bobby (Vijay Deverakonda), a student union leader and Lily (Rashmika Mandanna) a state-level cricketer. Bobby has anger management issues, which he needs to overcome and fight for his love.',
       details:'Rating: 3.0/5',
       author: 'Editorial Chief',
+      urlname: 'Dear-Comrade-on-amazon-prime',
       date: 'Sep 01, 2019'
     },
     {
@@ -36,6 +38,7 @@ export const ETNews =
       description: 'Sye Raa Narasimha Reddy is set to release on October 2.',
       author: 'Editorial Chief',
       details:'Mega fans on high after listening Pavan kalyan voice in Sye Raa teaser',
+      urlname: 'Sye-raa-release-date',
       date: 'Sep 01, 2019'
     },
     {
@@ -46,6 +49,7 @@ export const ETNews =
       description: 'Finaly Taramani telugu version is set to release in Sep 2019',
       author: 'Editorial Chief',
       details:'Taramani was a good hit in Tamilnadu',
+      urlname: 'Taramani-release-date',
       date: 'Sep 01, 2019'
     }
   ]

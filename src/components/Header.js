@@ -30,7 +30,7 @@ export default class Header extends React.Component {
     return (
       <div className="header-container">
         <div className="container">
-          <Navbar light expand="md">
+          <Navbar className="bg-white" light expand="md">
           <div className="container nav-container">
             <NavbarBrand href="/">Hindustan Daily</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />

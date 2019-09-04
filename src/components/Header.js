@@ -28,23 +28,25 @@ export default class Header extends React.Component {
   }
   render() {
     return (
-      <div className="container">
-        <Navbar color="light" light expand="md">
-        <div className="container nav-container">
-          <NavbarBrand href="/">Hindustan Daily</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/news">News</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/entertainment">Entertainment</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-          </div>
-        </Navbar>
+      <div className="header-container">
+        <div className="container">
+          <Navbar light expand="md">
+          <div className="container nav-container">
+            <NavbarBrand href="/">Hindustan Daily</NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className="ml-auto" navbar>
+                <NavItem>
+                  <NavLink href="/news">News</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/entertainment">Entertainment</NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
+            </div>
+          </Navbar>
+        </div>
       </div>
     );
   }

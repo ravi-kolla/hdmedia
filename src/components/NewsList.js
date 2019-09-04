@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import {Container, Row, Breadcrumb, BreadcrumbItem} from 'reactstrap';
 function RenderTopNewsItem({ pathname, news, onClick }){
   return(
-    <div className="">
+    <div className="bg-white">
       <div className="media">
           <div className="media-left">
             <Link to={`/${pathname}/${news.urlname}`}>
@@ -39,7 +39,7 @@ const NewsList = (props) => {
           </Breadcrumb>
         </Row>
       </Container>
-      <div>
+      <div className="all-news-component">
         {News}
       </div>
     </>

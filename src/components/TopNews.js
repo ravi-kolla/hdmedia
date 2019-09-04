@@ -29,8 +29,8 @@ const TopNews = (props) => {
     )
   })
   return (
-    <div className="mt-4 bg-white">
-      <h3>{props.title}</h3>
+    <div className="mt-4 top-news-container bg-white">
+      <h3 className="top-news-heading">{props.title}</h3>
       {News}
     </div>
   );

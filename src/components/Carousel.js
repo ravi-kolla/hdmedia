@@ -24,7 +24,8 @@ const items = [
     src: '/images/brandad.jpg',
     altText: 'Hindustan Daily Media',
     title: 'Hindustan Daily Media',
-    description: 'We are coming!'
+    description: 'We are coming!',
+    link: ''
   }
 ];
 

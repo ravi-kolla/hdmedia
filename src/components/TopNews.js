@@ -20,8 +20,8 @@ function RenderTopNewsItem({ pathname, news, onClick }){
   )
 }
 const TopNews = (props) => {
-
-  const News = props.news.map((newsitem)=>{
+  const count = parseInt(props.count);
+  const News = props.news.slice(0,count).map((newsitem)=>{
     return(
       <div key={newsitem.id}>
         <RenderTopNewsItem pathname={props.pathValue} news={newsitem} />

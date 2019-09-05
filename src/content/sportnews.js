@@ -9,6 +9,7 @@ export const SportsNews =
       details:'West Indies tour was a complete hit. Congratulations team India!',
       author: 'Editorial Chief',
       urlname: 'india-won',
+      category: 'sports',
       date: 'Sep 03, 2019'
     },{
       id: 3,
@@ -18,6 +19,7 @@ export const SportsNews =
       description: 'P.V. Sindu won gold in BWF Championship',
       author: 'Editorial Chief',
       urlname: 'sindu-champion',
+      category: 'sports',
       date: 'Sep 01, 2019'
     },
     {
@@ -28,6 +30,7 @@ export const SportsNews =
       description: 'Hima Das becomes the golden girl of India.',
       author: 'Editorial Chief',
       urlname: 'hima-das-golden-girl',
+      category: 'sports',
       date: 'Sep 01, 2019'
     },
     {
@@ -38,6 +41,7 @@ export const SportsNews =
       description: 'President  Ram Nath Kovind presented the National Sports Day Awards',
       author: 'Editorial Chief',
       urlname: 'national-sports-day',
+      category: 'sports',
       date: 'Sep 01, 2019'
     }
   ]

@@ -7,7 +7,8 @@ export const HomeFeaturedPosts = [
       image: '/images/DearComradeAmazon.jpg',
       description: "It's movie time, sit back and enjoy your long weekend!",
       button: 'Amazon Prime',
-      url: 'https://www.amazon.com/gp/video/detail/B07WP4K1H2/',
+      urlname: 'dear-comrade',
+      category:'entertainment',
       author: 'Editorial Chief',
       date: 'Sep 01, 2019'
     },
@@ -19,7 +20,8 @@ export const HomeFeaturedPosts = [
         image: '/images/khairtabad.PNG',
         description: 'Khairatabad Ganesh Ustav starts on 02-09-2019 to 12-09-2019.',
         button: 'Ganesh Ustav',
-        url: 'http://www.ganapathideva.org/',
+        urlname: 'ganesh-ustav',
+        category:'entertainment',
         author: 'Editorial Chief',
         date: 'Sep 01, 2019'
       },
@@ -31,7 +33,8 @@ export const HomeFeaturedPosts = [
           image: '/images/jio.jpg',
           description: 'JioFiber preview customers may get at least 2 months free services.',
           button: 'Jio Fiber',
-          url: 'https://jiofiber.org/',
+          urlname: 'jio-fiber',
+          category:'news',
           author: 'Editorial Chief',
           date: 'Sep 01, 2019'
         }

@@ -1,6 +1,7 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import React from 'react'
+import {Link} from 'react-router-dom'
+import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap'
+import FeaturedItems from './FeaturedPosts'
 
 const NewsDetail = (props) => {
 
@@ -19,19 +20,22 @@ const NewsDetail = (props) => {
           <Col md="8">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">{props.newsItem.title}</h5>
-                <p class="card-text">{props.newsItem.description}</p>
+                <h1 class="card-title">{props.newsItem.title}</h1>
                 <p class="card-text"><small class="text-muted">By {props.newsItem.author} - {props.newsItem.date}</small></p>
               </div>
               <img class="card-img-bottom" src={props.newsItem.image} alt="{props.newsItem.title}" />
               <div class="card-body">
-                <p class="card-text">{props.newsItem.details}</p>
+                <p class="card-text">{props.newsItem.description}</p>
+                <p class="card-text">{props.newsItem.details ? props.newsItem.details : null }</p>
               </div>
             </div>
           </Col>
           <Col md="4">
           </Col>
         </Row>
+      </Container>
+      <Container className="featured-items-container">
+        <FeaturedItems items={props.featured} />
       </Container>
     </div>
   )

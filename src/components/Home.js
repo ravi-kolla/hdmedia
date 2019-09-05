@@ -14,13 +14,13 @@ const Home = (props) => {
       <Container>
         <Row>
           <Col md="6" lg="4">
-            <TopNews title='Headlines' pathValue='news' breadCrumbName='News' news={props.news} />
+            <TopNews title='Headlines' pathValue='news' breadCrumbName='News' news={props.news} count={props.count} />
           </Col>
           <Col md="6" lg="4">
-            <TopNews title='Entertainment' pathValue='entertainment' breadCrumbName='Entertainment' news={props.etnews} />
+            <TopNews title='Entertainment' pathValue='entertainment' breadCrumbName='Entertainment' news={props.etnews} count={props.count} />
           </Col>
           <Col md="6" lg="4">
-            <TopNews title='Sports' pathValue='sports' breadCrumbName='Sports'  news={props.spnews} />
+            <TopNews title='Sports' pathValue='sports' breadCrumbName='Sports'  news={props.spnews} count={props.count}/>
           </Col>
         </Row>
       </Container>

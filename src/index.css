@@ -11,6 +11,14 @@ a,p,div {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+a, h5 {
+  text-decoration: none !important;
+  color: #212529;
+}
+p {
+  line-height: 1.7em;
+  font-size: 1.2rem;
+}
 .navbar {
 position:fixed;
 top:0px;
@@ -46,12 +54,13 @@ z-index:1030;
   text-decoration: none;
 }
 .headLineText {
+  font-size: 1rem;
   text-decoration: none;
   color: #212529;
 }
 .featured-items-container {
-  padding-left:0px;
-  padding-right:0px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 .top-news-container {
   border: 1px solid #f7f9f7;

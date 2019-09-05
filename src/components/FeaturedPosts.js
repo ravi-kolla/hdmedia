@@ -1,13 +1,16 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const RenderFeaturedItem = ({feature}) => {
   return(
     <div className="card mt-4">
-      <img className="card-img-top featured-img" src={feature.image} alt={feature.title} />
+      <Link to={`/${feature.category}/${feature.urlname}`}>
+        <img className="card-img-top featured-img" src={feature.image} alt={feature.title} />
+      </Link>
       <div className="card-body">
-        <h5 className="card-title">{feature.title}</h5>
-        <p className="card-text">{feature.description}</p>
-          <a href={feature.url} className="btn btn-primary">{feature.button}</a>
+        <Link to={`/${feature.category}/${feature.urlname}`}>
+          <h5 className="card-title">{feature.title}</h5>
+        </Link>
       </div>
     </div>
   )

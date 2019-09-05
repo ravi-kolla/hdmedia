@@ -21,7 +21,7 @@ const FeaturedItems = (props) => {
     )
   })
   return (
-    <div className="container">
+    <div className="container featured-items-container">
       <div className="card-group">
         {FeaturedPosts}
       </div>

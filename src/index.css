@@ -49,6 +49,10 @@ z-index:1030;
   text-decoration: none;
   color: #212529;
 }
+.featured-items-container {
+  padding-left:0px;
+  padding-right:0px;
+}
 .top-news-container {
   border: 1px solid #f7f9f7;
   border-radius: 0.25rem;

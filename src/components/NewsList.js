@@ -39,7 +39,7 @@ const NewsList = (props) => {
       </Helmet>
       <Container>
         <Row>
-          <Breadcrumb>
+          <Breadcrumb className="breadcrumb-container">
               <BreadcrumbItem><Link to="/">Home</Link></BreadcrumbItem>
               <BreadcrumbItem active>{props.pathname}</BreadcrumbItem>
           </Breadcrumb>

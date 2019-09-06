@@ -79,7 +79,6 @@ const Main = () => {
         <Route exact path="/sports" component={Sportspage} />
         <Route path="/sports/:sportsId" component={SportsItem} />
         <Route exact path="/entertainment" component={Entertainmentpage} />
-        <Route exact path="/happyvinayakachaturthi" component={Festivalpage} />
         <Route path="/celebrate/:celebrateLink" component={Festivalpage} />
         <Route path="/entertainment/:entertainmentId" component={EntertainmentItem} />
       </Switch>

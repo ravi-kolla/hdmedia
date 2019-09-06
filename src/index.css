@@ -99,9 +99,18 @@ z-index:1030;
 .breadcrumb {
   background-color: #fff !important;
 }
+.breadcrumb-container {
+  margin-top:20px;
+}
 .all-news-component {
   border: 1px solid #f7f9f7;
   border-radius: 0.25rem;
+}
+.festival-container {
+  margin-top: 80px;
+}
+.festival-banner {
+  margin-top: 20px;
 }
 .footer{
   padding:20px;

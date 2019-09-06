@@ -15,7 +15,7 @@ const NewsDetail = (props) => {
       <Container>
         <Container>
           <Row>
-            <Breadcrumb>
+            <Breadcrumb className="breadcrumb-container">
                 <BreadcrumbItem><Link to={`/${props.pathValue}`}>{props.breadCrumbName}</Link></BreadcrumbItem>
                 <BreadcrumbItem active>{props.newsItem.urlname}</BreadcrumbItem>
             </Breadcrumb>

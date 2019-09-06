@@ -1,6 +1,8 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import {Container, Row, Breadcrumb, BreadcrumbItem} from 'reactstrap';
+import React from 'react'
+import {Link} from 'react-router-dom'
+import {Container, Row, Breadcrumb, BreadcrumbItem} from 'reactstrap'
+import {Helmet} from 'react-helmet'
+
 function RenderTopNewsItem({ pathname, news, onClick }){
   return(
     <div className="bg-white">
@@ -31,6 +33,10 @@ const NewsList = (props) => {
   })
   return (
     <>
+      <Helmet>
+        <title>{props.pathname}</title>
+        <meta name="description" content= {`Hindustan Daily - ${props.pathname}`} />
+      </Helmet>
       <Container>
         <Row>
           <Breadcrumb>

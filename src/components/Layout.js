@@ -63,10 +63,10 @@ const Main = () => {
     )
   }
 
-  const Festivalpage = () => {
+  const Festivalpage = ({match}) => {
     return(
-      <FestivalWish festival={FestivalMsg} />
-    );
+      <FestivalWish festival={FestivalMsg.filter((FestivalMsg) => FestivalMsg.urlname === match.params.celebrateLink)[0]} />
+    )
   }
 
   return (
@@ -80,6 +80,7 @@ const Main = () => {
         <Route path="/sports/:sportsId" component={SportsItem} />
         <Route exact path="/entertainment" component={Entertainmentpage} />
         <Route exact path="/happyvinayakachaturthi" component={Festivalpage} />
+        <Route path="/celebrate/:celebrateLink" component={Festivalpage} />
         <Route path="/entertainment/:entertainmentId" component={EntertainmentItem} />
       </Switch>
       <Footer />

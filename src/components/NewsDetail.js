@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {Helmet} from "react-helmet"
 import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap'
 import FeaturedItems from './FeaturedPosts'
 
@@ -7,6 +8,10 @@ const NewsDetail = (props) => {
 
   return(
     <div className="container all-news">
+      <Helmet>
+        <title>{props.newsItem.title}</title>
+        <meta name="description" content={props.newsItem.title} />
+      </Helmet>
       <Container>
         <Container>
           <Row>

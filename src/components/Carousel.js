@@ -17,15 +17,17 @@ const items = [
     title:'',
     description: '',
     button: 'Learn More',
-    link: 'happyvinayakachaturthi'
+    category:'celebrate',
+    link: 'vinaya-chaturthi'
   },
   {
     id: 2,
-    src: '/images/brandad.jpg',
-    altText: 'Hindustan Daily Media',
-    title: 'Hindustan Daily Media',
-    description: 'We are coming!',
-    link: ''
+    src: '/images/missionbanner.png',
+    altText: 'Chandrayaan 2',
+    title: '',
+    description: '',
+    category:'celebrate',
+    link: 'chandrayaan-2'
   }
 ];
 
@@ -76,7 +78,7 @@ class CarouselComponent extends Component {
           key={item.id}
         >
           <img src={item.src} alt={item.altText} />
-          <Link to={`/${item.link}`}>
+          <Link to={`/${item.category}/${item.link}`}>
           <div className="card-img-overlay carousel-text d-md-block">
             <h3 className="carousel-text-h">{item.title}</h3>
             <p>{item.description}</p>

@@ -2,6 +2,17 @@ export const NewsData =
   [
     {
       id: 6,
+      title: 'Isro has lost communication with Vikram!',
+      thumbnail: '/images/lander.png',
+      image: '/images/lander.png',
+      description: "'Vikram lander descent was as planned and normal performance was observed till the altitude of 2.1 km. Subsequently the communication from the lander to ground station was lost. The data is being analyzed,' said K. Sivan, chairman of the Indian Space Research Organisation",
+      details: "India is proud of our scientists! They’ve given their best and have always made India proud. These are moments to be courageous, and courageous we will be! Chairman @isro gave updates on Chandrayaan-2. We remain hopeful and will continue working hard on our space programme. - Narendra Modi",
+      author: 'Editorial Chief',
+      urlname: 'chandrayaan-lander-lost-contact',
+      category: 'news',
+      date: 'Sep 06, 2019'
+    },{
+      id: 6,
       title: 'New Governors were appointed for five States including Telangana.',
       thumbnail: '/images/governors.jpg',
       image: '/images/governors.jpg',

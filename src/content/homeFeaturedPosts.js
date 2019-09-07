@@ -1,16 +1,16 @@
 export const HomeFeaturedPosts = [
   {
       id: 1,
-      title: 'Dear Comrade is now available on Amazon prime',
-      alt: 'Dear Comrade Image',
-      thumbnail: '/images/DearComradeAmazon.jpg',
-      image: '/images/DearComradeAmazon.jpg',
-      description: "It's movie time, sit back and enjoy your long weekend!",
-      button: 'Amazon Prime',
-      urlname: 'dear-comrade',
-      category:'entertainment',
+      title: 'Isro lost communication with Vikram',
+      alt: 'Isro lost communication with Vikram',
+      thumbnail: '/images/lander.png',
+      image: '/images/lander.png',
+      description: "Isro has lost communication with Vikram!",
+      button: 'ISRO',
+      urlname: 'chandrayaan-lander-lost-contact',
+      category:'news',
       author: 'Editorial Chief',
-      date: 'Sep 01, 2019'
+      date: 'Sep 06, 2019'
     },
     {
         id: 2,

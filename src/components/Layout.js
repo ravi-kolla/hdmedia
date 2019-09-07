@@ -47,19 +47,19 @@ const Main = () => {
 
   const NewsItem = ({match}) => {
     return(
-      <NewsDetail pathValue='news' breadCrumbName='News' featured={news} newsItem={news.filter((news) => news.urlname === match.params.newsLink)[0]} />
+      <NewsDetail pathValue='news' breadCrumbName='News' featured={news.filter((news) => news.urlname !== match.params.newsLink)} newsItem={news.filter((news) => news.urlname === match.params.newsLink)[0]} />
     )
   }
 
   const EntertainmentItem = ({match}) => {
     return(
-      <NewsDetail pathValue='entertainment' breadCrumbName='Entertainment' featured={ETnews} newsItem={ETnews.filter((ETnews) => ETnews.urlname === match.params.entertainmentId)[0]} />
+      <NewsDetail pathValue='entertainment' breadCrumbName='Entertainment' featured={ETnews.filter((ETnews) => ETnews.urlname !== match.params.entertainmentId)} newsItem={ETnews.filter((ETnews) => ETnews.urlname === match.params.entertainmentId)[0]} />
     )
   }
 
   const SportsItem = ({match}) => {
     return(
-      <NewsDetail pathValue='sports' breadCrumbName='Sports'  featured={SPnews} newsItem={SPnews.filter((SPnews) => SPnews.urlname === match.params.sportsId)[0]} />
+      <NewsDetail pathValue='sports' breadCrumbName='Sports'  featured={SPnews.filter((SPnews) => SPnews.urlname !== match.params.sportsId)} newsItem={SPnews.filter((SPnews) => SPnews.urlname === match.params.sportsId)[0]} />
     )
   }
 

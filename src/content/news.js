@@ -1,7 +1,7 @@
 export const NewsData =
   [
     {
-      id: 6,
+      id: 7,
       title: 'Isro has lost communication with Vikram!',
       thumbnail: '/images/lander.png',
       image: '/images/lander.png',

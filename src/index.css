@@ -112,6 +112,9 @@ z-index:1030;
 .festival-banner {
   margin-top: 20px;
 }
+.sub-heading {
+  font-weight: bold;
+}
 .footer{
   padding:20px;
   bottom:0px;

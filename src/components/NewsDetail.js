@@ -23,15 +23,15 @@ const NewsDetail = (props) => {
         </Container>
         <Row>
           <Col md="8">
-            <div class="card">
-              <div class="card-body">
-                <h1 class="card-title">{props.newsItem.title}</h1>
-                <p class="card-text"><small class="text-muted">By {props.newsItem.author} - {props.newsItem.date}</small></p>
+            <div className="card">
+              <div className="card-body">
+                <h1 className="card-title">{props.newsItem.title}</h1>
+                <p className="card-text"><small className="text-muted">By {props.newsItem.author} - {props.newsItem.date}</small></p>
               </div>
-              <img class="card-img-bottom" src={props.newsItem.image} alt="{props.newsItem.title}" />
-              <div class="card-body">
-                <p class="card-text">{props.newsItem.description}</p>
-                <p class="card-text">{props.newsItem.details ? props.newsItem.details : null }</p>
+              <img className="card-img-bottom" src={props.newsItem.image} alt="{props.newsItem.title}" />
+              <div className="card-body">
+                <p className="card-text">{props.newsItem.description}</p>
+                <p className="card-text">{props.newsItem.details ? props.newsItem.details : null }</p>
               </div>
             </div>
           </Col>

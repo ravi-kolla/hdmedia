@@ -1,12 +1,13 @@
-import React, {useState} from 'react';
-import { Route, Switch } from "react-router-dom";
-import Header from './Header';
-import Home from './Home';
-import News from './News';
-import Entertainment from './Entertainment';
-import Footer from './Footer';
-import NewsDetail from './NewsDetail';
-import FestivalWish from './FestivalWish';
+import React, {useState} from 'react'
+import { Route, Switch } from "react-router-dom"
+import Header from './Header'
+import Home from './Home'
+import News from './News'
+import Entertainment from './Entertainment'
+import Footer from './Footer'
+import NewsDetail from './NewsDetail'
+import FestivalWish from './FestivalWish'
+import MovieReview from './Reviews'
 
 import {NewsData} from '../content/news'
 import {ETNews} from '../content/etnews'
@@ -14,6 +15,7 @@ import {SportsNews} from '../content/sportnews'
 import {BannerAd1} from '../content/imageAd1'
 import {FestivalMessage} from '../content/festival'
 import {HomeFeaturedPosts} from '../content/homeFeaturedPosts'
+import {ReviewsData} from '../content/reviews'
 
 const Main = () => {
 
@@ -23,10 +25,11 @@ const Main = () => {
   const [ImgAd, setImgAd] = useState(BannerAd1);
   const [FestivalMsg, setFestivalMsg] = useState(FestivalMessage);
   const [HFP, setHFP] = useState(HomeFeaturedPosts);
+  const [Reviews, setReviews] = useState(ReviewsData);
 
   const Homepage = () => {
     return(
-      <Home count='5' news={news} etnews={ETnews} spnews={SPnews} imgad={ImgAd} featured={HFP} />
+      <Home count='5' news={news} etnews={ETnews} spnews={SPnews} imgad={ImgAd} featured={HFP} reviews={Reviews} />
     );
   }
   const Newspage = () => {
@@ -69,6 +72,13 @@ const Main = () => {
     )
   }
 
+  const Reviewspage = ({match}) => {
+    console.log(match.params.reviewLink);
+    return(
+      <MovieReview pathValue='entertainment' breadCrumbName='Entertainment' newsItem={Reviews.filter((Reviews) => Reviews.urlname === match.params.reviewLink)[0]} featured={ETnews.filter((ETnews) => ETnews.urlname !== match.params.entertainmentId)} />
+    )
+  }
+
   return (
     <>
       <Header />
@@ -80,7 +90,9 @@ const Main = () => {
         <Route path="/sports/:sportsId" component={SportsItem} />
         <Route exact path="/entertainment" component={Entertainmentpage} />
         <Route path="/celebrate/:celebrateLink" component={Festivalpage} />
+        <Route exact path="/entertainment/reviews/:reviewLink" component={Reviewspage} />
         <Route path="/entertainment/:entertainmentId" component={EntertainmentItem} />
+        <Route path="/entertainment/reviews/:reviewLink" component={Reviewspage} />
       </Switch>
       <Footer />
     </>

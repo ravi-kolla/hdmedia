@@ -24,6 +24,7 @@ const Home = (props) => {
           </Col>
         </Row>
       </Container>
+      <FeaturedItems items={props.reviews} />
       <div className="container">
         <ImageAd imageAd={props.imgad}/>
       </div>

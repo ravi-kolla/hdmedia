@@ -5,7 +5,7 @@ export const NewsData =
       title: "It's Apple day",
       thumbnail: '/images/tim-cook-apple.png',
       image: '/images/tim-cook-apple.png',
-      description: "Apple has release three new iPhones, iPhone 11, iPhone 11 pro, iPhone 11 pro max, in the price ranging from $699 to $1099 ",
+      description: "Apple launched three new iPhones, iPhone 11, iPhone 11 pro, iPhone 11 pro max, in the price ranging from $699 to $1099 for their base models.",
       details: "Apple also released Apple Watch series 5, a new 10.2'' iPad and Apple Arcade, Apple TV+ subscriptions with 1 month free trail included.",
       author: 'Editorial Chief',
       urlname: 'apple-event',

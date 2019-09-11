@@ -1,18 +1,18 @@
 export const NewsData =
   [
     {
-      id: 9,
+      id: 19,
       title: "It's Apple day",
       thumbnail: '/images/tim-cook-apple.png',
       image: '/images/tim-cook-apple.png',
       description: "Apple has release three new iPhones, iPhone 11, iPhone 11 pro, iPhone 11 pro max, in the price ranging from $699 to $1099 ",
-      details: "Apple also release Apple Watch series 5, a new 10.2'' iPad, Apple Arcade and Apple TV+",
+      details: "Apple also released Apple Watch series 5, a new 10.2'' iPad and Apple Arcade, Apple TV+ subscriptions with 1 month free trail included.",
       author: 'Editorial Chief',
       urlname: 'apple-event',
       category: 'technology',
       date: 'Sep 10, 2019'
     },{
-      id: 8,
+      id: 18,
       title: "ios 13 will be available on september 19",
       thumbnail: '/images/tim-cook-apple.png',
       image: '/images/tim-cook-apple.png',
@@ -23,6 +23,120 @@ export const NewsData =
       category: 'technology',
       date: 'Sep 10, 2019'
     },{
+      id: 17,
+      title: 'India won the test series!',
+      thumbnail: '/images/kohli.jpg',
+      image: '/images/kohli.jpg',
+      description: "It's a land slide victory for team India. India won both the test matches with huge margings. First game India won by 318 runs & second one by 257 runs.",
+      details:'West Indies tour was a complete hit. Congratulations team India!',
+      author: 'Editorial Chief',
+      urlname: 'india-won',
+      category: 'sports',
+      date: 'Sep 03, 2019'
+    },{
+      id: 16,
+      title: 'P.V. Sindu won gold in BWF Championship',
+      thumbnail: '/images/pvsindhu.PNG',
+      image: '/images/pvsindhu.PNG',
+      description: 'P.V. Sindu won gold in BWF Championship',
+      author: 'Editorial Chief',
+      urlname: 'sindu-champion',
+      category: 'sports',
+      date: 'Sep 01, 2019'
+    },
+    {
+      id: 15,
+      title: 'Hima Das becomes the golden girl of India.',
+      thumbnail: '/images/himadas.PNG',
+      image: '/images/himadas.PNG',
+      description: 'Hima Das becomes the golden girl of India.',
+      author: 'Editorial Chief',
+      urlname: 'hima-das-golden-girl',
+      category: 'sports',
+      date: 'Sep 01, 2019'
+    },
+    {
+      id: 14,
+      title: 'President  Ram Nath Kovind presented the National Sports Day Awards',
+      thumbnail: '/images/sportsday.PNG',
+      image: '/images/sportsday.PNG',
+      description: 'President  Ram Nath Kovind presented the National Sports Day Awards',
+      author: 'Editorial Chief',
+      urlname: 'national-sports-day',
+      category: 'sports',
+      date: 'Sep 01, 2019'
+    },
+    {
+      id: 13,
+      title: 'Valmiki is set to release on Sep 20, 2019',
+      thumbnail: '/images/valmiki.jpg',
+      image: '/images/valmiki.jpg',
+      description: 'Valmiki is a remake version of Tamil blockbuster movie Jigarthanda and it is a gangster comedy entertainer directed by Harish Shankar and produced by Achanta Ramu, Achanta Gopinath under 14 Reels Plus banner.',
+      details:'The movie cast includes Varun Tej, Atharvaa Murali and Pooja Hegde while Mickey J Meyer scored music.',
+      author: 'Editorial Chief',
+      urlname: 'valmiki-release-date',
+      category: 'entertainment',
+      date: 'Sep 02, 2019'
+    },{
+      id: 12,
+      title: 'Saaho sets record high collections!',
+      thumbnail: '/images/saaho.jpg',
+      image: '/images/saaho.jpg',
+      description: 'Saaho, starring Prabhas and Shraddha Kapoor, released on August 30 amid much fanfare. The spy thriller is setting the box office on fire. It;s close to 300 mark by the end of third day.',
+      details:'According to trade analyst Joginder Tejuja, It’s simple - Critics’ views have had ZERO impact in the film. It’s audience word of mouth that will do the talking and so far it’s going excellent!',
+      author: 'Editorial Chief',
+      urlname: 'Saaho-record-collections',
+      category: 'entertainment',
+      date: 'Sep 01, 2019'
+    },{
+      id: 11,
+      title: 'Dear Comrade is now available on Amazon prime',
+      thumbnail: '/images/DearComradeAmazon.jpg',
+      image: '/images/DearComradeAmazon.jpg',
+      description: 'Dear Comrade is an intense love story between Bobby (Vijay Deverakonda), a student union leader and Lily (Rashmika Mandanna) a state-level cricketer. Bobby has anger management issues, which he needs to overcome and fight for his love.',
+      details:'Rating: 3.0/5',
+      author: 'Editorial Chief',
+      urlname: 'dear-comrade',
+      category: 'entertainment',
+      date: 'Sep 01, 2019'
+    },
+    {
+      id: 10,
+      title: 'Sye Raa Narasimha Reddy is set to release on October 2.',
+      thumbnail: '/images/syeraa.PNG',
+      image: '/images/syeraa.PNG',
+      description: 'Sye Raa Narasimha Reddy is set to release on October 2.',
+      author: 'Editorial Chief',
+      details:'Mega fans on high after listening Pavan kalyan voice in Sye Raa teaser',
+      urlname: 'Sye-raa-release-date',
+      category: 'entertainment',
+      date: 'Sep 01, 2019'
+    },
+    {
+      id: 9,
+      title: 'Finally Taramani telugu version is set to release in Sep 2019',
+      thumbnail: '/images/taramani.PNG',
+      image: '/images/taramani.PNG',
+      description: 'Khairatabad Ganesh Ustav starts on 02-09-2019 to 12-09-2019.',
+      author: 'Editorial Chief',
+      details:'Taramani was a good hit in Tamilnadu',
+      urlname: 'taramani-release-date',
+      category: 'entertainment',
+      date: 'Sep 01, 2019'
+    },
+    {
+      id: 8,
+      title: 'Khairatabad Ganesh Ustav Committee welcomes all!',
+      thumbnail: '/images/khairtabad.PNG',
+      image: '/images/khairtabad.PNG',
+      description: 'Khairatabad Ganesh Ustav starts on 02-09-2019 to 12-09-2019.',
+      author: 'Editorial Chief',
+      details:'',
+      urlname: 'ganesh-ustav',
+      category: 'entertainment',
+      date: 'Sep 01, 2019'
+    },
+    {
       id: 7,
       title: 'Isro has lost communication with Vikram!',
       thumbnail: '/images/lander.png',

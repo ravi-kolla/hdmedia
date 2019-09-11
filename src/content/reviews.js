@@ -1,7 +1,7 @@
 export const ReviewsData =
   [
     {
-      id: 1,
+      id: 2,
       title: 'Saaho Review',
       name: 'Saaho',
       thumbnail: '/images/saaho.jpg',
@@ -27,5 +27,32 @@ export const ReviewsData =
       urlname: 'saaho-review',
       category: 'entertainment/reviews',
       date: 'Sep 09, 2019'
+    },{
+      id: 1,
+      title: 'Evaru Review',
+      name: 'Evaru',
+      thumbnail: '/images/evaru.png',
+      image: '/images/evarumain.png',
+      rating: '3/5',
+      cast: 'Adivi Sesh, Regina Cassandra, Naveen Chandra, Murali Sharma, Pavithra Lokesh, Nihal and others',
+      music: 'Sricharan Pakala',
+      producer: 'Pearl V. Potluri, Param V. Potluri, Kavin Anne',
+      banner: 'PVP Cinema',
+      writter: '',
+      director: 'Venkat Ramji',
+      released: 'August 15, 2019',
+      storyintro: 'Sameera (Regina) is accused of murdering her lover, with whom she is having a relationship outside marriage as her husband is gay.',
+      storydetails: 'Sameera came to a Coonoor resort in Tamilnadu with her lover Ashok. Her friend bribes a police officer Vikram Vasudev (Adivi Sesh) to help Sameera to build a defense case before she appears in the court of law.',
+      storyconclusion: 'He asks her account, why did she murder her own lover and what really has happened.',
+      heroperformance:"The film completely belongs to Regina. She is terrific in the role of Sameera. She has not only done bold scenes with ease but also pulled off the act of deceit with aplomb. Evaru is her show.",
+      heroineperformance: 'Adivi Sesh has also done quite well in a role that required him to showcase two variations. He has shown maturity in acting.',
+      othersperformance: 'Naveen Chandra in an all-important role is good. Pavitra Lokesh and Murali Sharma have done in their usual manner.',
+      technicaldetail1: 'The film has rich visuals. Cinematography and production values are top class. Editing and background music are huge assets. The film has no songs. Dialogues are effective.',
+      technicaldetail2: '',
+      finalnote: 'Well Done!',
+      author: 'Editorial Chief',
+      urlname: 'evaru-review',
+      category: 'entertainment/reviews',
+      date: 'Sep 10, 2019'
     }
   ]

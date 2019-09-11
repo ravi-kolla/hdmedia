@@ -22,9 +22,14 @@ const Home = (props) => {
           <Col md="6" lg="4">
             <TopNews title='Sports' pathValue='sports' breadCrumbName='Sports'  news={props.spnews} count={props.count}/>
           </Col>
+          <Col md="6" lg="4">
+            <TopNews title='Reviews' pathValue='entertainment/reviews' breadCrumbName='Reviews'  news={props.reviews} count={props.count}/>
+          </Col>
+          <Col md="6" lg="4">
+            <TopNews title='Technology' pathValue='technology' breadCrumbName='Technology'  news={props.tech} count={props.count}/>
+          </Col>
         </Row>
       </Container>
-      <FeaturedItems items={props.reviews} />
       <div className="container">
         <ImageAd imageAd={props.imgad}/>
       </div>

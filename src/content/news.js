@@ -1,6 +1,28 @@
 export const NewsData =
   [
     {
+      id: 9,
+      title: "It's Apple day",
+      thumbnail: '/images/tim-cook-apple.png',
+      image: '/images/tim-cook-apple.png',
+      description: "Apple has release three new iPhones, iPhone 11, iPhone 11 pro, iPhone 11 pro max, in the price ranging from $699 to $1099 ",
+      details: "Apple also release Apple Watch series 5, a new 10.2'' iPad, Apple Arcade and Apple TV+",
+      author: 'Editorial Chief',
+      urlname: 'apple-event',
+      category: 'technology',
+      date: 'Sep 10, 2019'
+    },{
+      id: 8,
+      title: "ios 13 will be available on september 19",
+      thumbnail: '/images/tim-cook-apple.png',
+      image: '/images/tim-cook-apple.png',
+      description: "Apple announced in a press release that iOS 13 will be available on September 19. Even if you don’t plan to buy a new iPhone, you’ll be able to get a bunch of new features.",
+      details: "But that’s not all. iOS 13.1 will be available on September 30. Apple had to remove some features of iOS 13.0 at the last minute as they weren’t stable enough, such as Shortcuts automations and the ability to share your ETA in Apple Maps. That’s why iOS 13.1 will be released shortly after iOS 13. If you have an iPhone 6s or later, an iPhone SE or a 7th-generation iPod touch, your device supports iOS 13.",
+      author: 'Editorial Chief',
+      urlname: 'ios-13-release',
+      category: 'technology',
+      date: 'Sep 10, 2019'
+    },{
       id: 7,
       title: 'Isro has lost communication with Vikram!',
       thumbnail: '/images/lander.png',

@@ -29,12 +29,17 @@ const Main = () => {
 
   const Homepage = () => {
     return(
-      <Home count='5' news={news} etnews={ETnews} spnews={SPnews} imgad={ImgAd} featured={HFP} reviews={Reviews} />
+      <Home count='5' news={news.filter((news) => news.category === 'news')} tech={news.filter((news) => news.category === 'technology')}  etnews={ETnews} spnews={SPnews} imgad={ImgAd} featured={HFP} reviews={Reviews} />
     );
   }
   const Newspage = () => {
     return(
-      <News pathValue='news' breadCrumbName='News' news={news}/>
+      <News pathValue='news' breadCrumbName='News' news={news.filter((news) => news.category === 'news')}/>
+    );
+  }
+  const Techpage = () => {
+    return(
+      <News pathValue='technology' breadCrumbName='Technology' news={news.filter((news) => news.category === 'technology')}/>
     );
   }
   const Entertainmentpage = () => {
@@ -73,9 +78,13 @@ const Main = () => {
   }
 
   const Reviewspage = ({match}) => {
-    console.log(match.params.reviewLink);
     return(
-      <MovieReview pathValue='entertainment' breadCrumbName='Entertainment' newsItem={Reviews.filter((Reviews) => Reviews.urlname === match.params.reviewLink)[0]} featured={ETnews.filter((ETnews) => ETnews.urlname !== match.params.entertainmentId)} />
+      <MovieReview pathValue='entertainment' breadCrumbName='Entertainment' newsItem={Reviews.filter((Reviews) => Reviews.urlname === match.params.reviewLink)[0]} featured={Reviews.filter((Reviews) => Reviews.urlname !== match.params.reviewLink)} />
+    )
+  }
+  const TechDetailpage = ({match}) => {
+    return(
+      <NewsDetail pathValue='technology' breadCrumbName='Technology'  featured={news.filter((news) => news.urlname !== match.params.techLink)} newsItem={news.filter((news) => news.urlname === match.params.techLink)[0]} />
     )
   }
 
@@ -85,6 +94,7 @@ const Main = () => {
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route exact path="/news" component={Newspage} />
+        <Route exact path="/technology" component={Techpage} />
         <Route path="/news/:newsLink" component={NewsItem} />
         <Route exact path="/sports" component={Sportspage} />
         <Route path="/sports/:sportsId" component={SportsItem} />
@@ -93,6 +103,7 @@ const Main = () => {
         <Route exact path="/entertainment/reviews/:reviewLink" component={Reviewspage} />
         <Route path="/entertainment/:entertainmentId" component={EntertainmentItem} />
         <Route path="/entertainment/reviews/:reviewLink" component={Reviewspage} />
+        <Route path="/technology/:techLink" component={TechDetailpage} />
       </Switch>
       <Footer />
     </>

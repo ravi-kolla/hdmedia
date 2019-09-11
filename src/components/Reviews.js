@@ -17,7 +17,7 @@ const MovieReview = (props) => {
           <Row>
             <Breadcrumb className="breadcrumb-container">
                 <BreadcrumbItem><Link to={`/${props.pathValue}`}>{props.breadCrumbName}</Link></BreadcrumbItem>
-                <BreadcrumbItem active>{props.newsItem.urlname} Review</BreadcrumbItem>
+                <BreadcrumbItem active>{props.newsItem.urlname}</BreadcrumbItem>
             </Breadcrumb>
           </Row>
         </Container>

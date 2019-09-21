@@ -13,8 +13,12 @@ const Home = (props) => {
       <FeaturedItems items={props.featured} />
       <Container>
         <Row>
+          {props.headlines ?
           <Col md="6" lg="4">
-            <TopNews title='Headlines' pathValue='news' breadCrumbName='News' news={props.news} count={props.count} />
+            <TopNews title='Headlines' pathValue='news' breadCrumbName='News' news={props.headlines} count={props.count} />
+          </Col> : null }
+          <Col md="6" lg="4">
+            <TopNews title='News' pathValue='news' breadCrumbName='News' news={props.news} count={props.count} />
           </Col>
           <Col md="6" lg="4">
             <TopNews title='Entertainment' pathValue='entertainment' breadCrumbName='Entertainment' news={props.etnews} count={props.count} />

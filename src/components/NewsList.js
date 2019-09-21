@@ -9,7 +9,7 @@ function RenderTopNewsItem({ pathname, news, onClick }){
       <div className="media">
           <div className="media-left">
             <Link to={`/${pathname}/${news.urlname}`}>
-              <img className="headlineImg" title={news.title} alt={news.title} src={news.thumbnail} />
+              <img className="headlineImg" title={news.title} alt={news.title} src={news.urlToImage} />
             </Link>
           </div>
           <div className="media-body">

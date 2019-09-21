@@ -3,7 +3,7 @@ export const NewsData =
     {
       id: 19,
       title: "It's Apple day",
-      thumbnail: '/images/tim-cook-apple.png',
+      urlToImage: '/images/tim-cook-apple.png',
       image: '/images/tim-cook-apple.png',
       description: "Apple launched three new iPhones, iPhone 11, iPhone 11 pro, iPhone 11 pro max, in the price ranging from $699 to $1099 for their base models.",
       details: "Apple also released Apple Watch series 5, a new 10.2'' iPad and Apple Arcade, Apple TV+ subscriptions with 1 month free trail included.",
@@ -14,7 +14,7 @@ export const NewsData =
     },{
       id: 18,
       title: "ios 13 will be available on september 19",
-      thumbnail: '/images/tim-cook-apple.png',
+      urlToImage: '/images/tim-cook-apple.png',
       image: '/images/tim-cook-apple.png',
       description: "Apple announced in a press release that iOS 13 will be available on September 19. Even if you don’t plan to buy a new iPhone, you’ll be able to get a bunch of new features.",
       details: "But that’s not all. iOS 13.1 will be available on September 30. Apple had to remove some features of iOS 13.0 at the last minute as they weren’t stable enough, such as Shortcuts automations and the ability to share your ETA in Apple Maps. That’s why iOS 13.1 will be released shortly after iOS 13. If you have an iPhone 6s or later, an iPhone SE or a 7th-generation iPod touch, your device supports iOS 13.",
@@ -25,7 +25,7 @@ export const NewsData =
     },{
       id: 17,
       title: 'India won the test series!',
-      thumbnail: '/images/kohli.jpg',
+      urlToImage: '/images/kohli.jpg',
       image: '/images/kohli.jpg',
       description: "It's a land slide victory for team India. India won both the test matches with huge margings. First game India won by 318 runs & second one by 257 runs.",
       details:'West Indies tour was a complete hit. Congratulations team India!',
@@ -36,7 +36,7 @@ export const NewsData =
     },{
       id: 16,
       title: 'P.V. Sindu won gold in BWF Championship',
-      thumbnail: '/images/pvsindhu.PNG',
+      urlToImage: '/images/pvsindhu.PNG',
       image: '/images/pvsindhu.PNG',
       description: 'P.V. Sindu won gold in BWF Championship',
       author: 'Editorial Chief',
@@ -47,7 +47,7 @@ export const NewsData =
     {
       id: 15,
       title: 'Hima Das becomes the golden girl of India.',
-      thumbnail: '/images/himadas.PNG',
+      urlToImage: '/images/himadas.PNG',
       image: '/images/himadas.PNG',
       description: 'Hima Das becomes the golden girl of India.',
       author: 'Editorial Chief',
@@ -58,7 +58,7 @@ export const NewsData =
     {
       id: 14,
       title: 'President  Ram Nath Kovind presented the National Sports Day Awards',
-      thumbnail: '/images/sportsday.PNG',
+      urlToImage: '/images/sportsday.PNG',
       image: '/images/sportsday.PNG',
       description: 'President  Ram Nath Kovind presented the National Sports Day Awards',
       author: 'Editorial Chief',
@@ -69,7 +69,7 @@ export const NewsData =
     {
       id: 13,
       title: 'Valmiki is set to release on Sep 20, 2019',
-      thumbnail: '/images/valmiki.jpg',
+      urlToImage: '/images/valmiki.jpg',
       image: '/images/valmiki.jpg',
       description: 'Valmiki is a remake version of Tamil blockbuster movie Jigarthanda and it is a gangster comedy entertainer directed by Harish Shankar and produced by Achanta Ramu, Achanta Gopinath under 14 Reels Plus banner.',
       details:'The movie cast includes Varun Tej, Atharvaa Murali and Pooja Hegde while Mickey J Meyer scored music.',
@@ -80,7 +80,7 @@ export const NewsData =
     },{
       id: 12,
       title: 'Saaho sets record high collections!',
-      thumbnail: '/images/saaho.jpg',
+      urlToImage: '/images/saaho.jpg',
       image: '/images/saaho.jpg',
       description: 'Saaho, starring Prabhas and Shraddha Kapoor, released on August 30 amid much fanfare. The spy thriller is setting the box office on fire. It;s close to 300 mark by the end of third day.',
       details:'According to trade analyst Joginder Tejuja, It’s simple - Critics’ views have had ZERO impact in the film. It’s audience word of mouth that will do the talking and so far it’s going excellent!',
@@ -91,7 +91,7 @@ export const NewsData =
     },{
       id: 11,
       title: 'Dear Comrade is now available on Amazon prime',
-      thumbnail: '/images/DearComradeAmazon.jpg',
+      urlToImage: '/images/DearComradeAmazon.jpg',
       image: '/images/DearComradeAmazon.jpg',
       description: 'Dear Comrade is an intense love story between Bobby (Vijay Deverakonda), a student union leader and Lily (Rashmika Mandanna) a state-level cricketer. Bobby has anger management issues, which he needs to overcome and fight for his love.',
       details:'Rating: 3.0/5',
@@ -103,7 +103,7 @@ export const NewsData =
     {
       id: 10,
       title: 'Sye Raa Narasimha Reddy is set to release on October 2.',
-      thumbnail: '/images/syeraa.PNG',
+      urlToImage: '/images/syeraa.PNG',
       image: '/images/syeraa.PNG',
       description: 'Sye Raa Narasimha Reddy is set to release on October 2.',
       author: 'Editorial Chief',
@@ -115,7 +115,7 @@ export const NewsData =
     {
       id: 9,
       title: 'Finally Taramani telugu version is set to release in Sep 2019',
-      thumbnail: '/images/taramani.PNG',
+      urlToImage: '/images/taramani.PNG',
       image: '/images/taramani.PNG',
       description: 'Khairatabad Ganesh Ustav starts on 02-09-2019 to 12-09-2019.',
       author: 'Editorial Chief',
@@ -127,7 +127,7 @@ export const NewsData =
     {
       id: 8,
       title: 'Khairatabad Ganesh Ustav Committee welcomes all!',
-      thumbnail: '/images/khairtabad.PNG',
+      urlToImage: '/images/khairtabad.PNG',
       image: '/images/khairtabad.PNG',
       description: 'Khairatabad Ganesh Ustav starts on 02-09-2019 to 12-09-2019.',
       author: 'Editorial Chief',
@@ -139,7 +139,7 @@ export const NewsData =
     {
       id: 7,
       title: 'Isro has lost communication with Vikram!',
-      thumbnail: '/images/lander.png',
+      urlToImage: '/images/lander.png',
       image: '/images/lander.png',
       description: "'Vikram lander descent was as planned and normal performance was observed till the altitude of 2.1 km. Subsequently the communication from the lander to ground station was lost. The data is being analyzed,' said K. Sivan, chairman of the Indian Space Research Organisation",
       details: "India is proud of our scientists! They’ve given their best and have always made India proud. These are moments to be courageous, and courageous we will be! Chairman @isro gave updates on Chandrayaan-2. We remain hopeful and will continue working hard on our space programme. - Narendra Modi",
@@ -150,7 +150,7 @@ export const NewsData =
     },{
       id: 6,
       title: 'New Governors were appointed for five States including Telangana.',
-      thumbnail: '/images/governors.jpg',
+      urlToImage: '/images/governors.jpg',
       image: '/images/governors.jpg',
       description: "The chief of the Tamil Nadu BJP, Dr Tamilisai Soundararajan and former Union minister Bandaru Dattatreya are on the list of five new Governors announced by President Ram Nath Kovind today.",
       details: "Dr Soundararajan has been appointed the Governor of Telangana - having a separate Governor is a first for the country's newest state. Bandaru Dattatreya has been put in charge of Himachal Pradesh, replacing Kalraj Mishra and Kalraj Mishra is transfered as Governor of Rajasthan. Bhagat Sing Koshyari former CM of Uttarakhand has been appointed as Maharashtra Governor and Arif Mohammmed Khan former union minsiter is apponted as Governor of Kerala.",
@@ -161,7 +161,7 @@ export const NewsData =
     },{
       id: 5,
       title: 'Mr.Naidu wrote letter to CM Jagan regarding the current issues.',
-      thumbnail: '/images/NaiduDp.PNG',
+      urlToImage: '/images/NaiduDp.PNG',
       image: '/images/NaiduDp.PNG',
       description: 'Mr.Naidu in his letter demands govt to clear pending farm loan waiver bills and also, questions about govt stand on capital city and regading the efforts taken for recent flood relief management.',
       author: 'Editorial Chief',
@@ -171,7 +171,7 @@ export const NewsData =
     },{
       id: 4,
       title: 'Happy Birthday Pawan Kalyan.',
-      thumbnail: '/images/PavanDp.PNG',
+      urlToImage: '/images/PavanDp.PNG',
       image: '/images/PavanDp.PNG',
       description: 'A great actor turned politician and a great humanitarian, we all wish him a happy birtday. We wish he plays a more constructive role in the politics.',
       author: 'Editorial Chief',
@@ -182,7 +182,7 @@ export const NewsData =
     {
       id: 3,
       title: 'Andhra Pradesh revenue fall from 14% to 5% in last three months.',
-      thumbnail: '/images/JaganDp.PNG',
+      urlToImage: '/images/JaganDp.PNG',
       image: '/images/JaganDp.PNG',
       description: 'Andhra Pradesh revenue fall from 14% to 5% in last three months.',
       author: 'Editorial Chief',
@@ -193,7 +193,7 @@ export const NewsData =
     {
       id: 2,
       title: 'Pawan Kalyan has demanded that the capital city of Andhra Pradesh be built in Amaravati only.',
-      thumbnail: '/images/PavanDp.PNG',
+      urlToImage: '/images/PavanDp.PNG',
       image: '/images/PavanDp.PNG',
       description: 'Pawan Kalyan has demanded that the capital city of Andhra Pradesh be built in Amaravati and nowhere else',
       author: 'Editorial Chief',
@@ -204,7 +204,7 @@ export const NewsData =
     {
       id: 1,
       title: 'JioFiber will be available starting September 5.',
-      thumbnail: '/images/jio.jpg',
+      urlToImage: '/images/jio.jpg',
       image: '/images/jio.jpg',
       description: 'JioFiber preview customers may get at least 2 months free services.',
       author: 'Editorial Chief',

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import { Route, Switch } from "react-router-dom"
 import Header from './Header'
 import Home from './Home'
@@ -22,10 +22,29 @@ const Main = () => {
   const [FestivalMsg, setFestivalMsg] = useState(FestivalMessage);
   const [HFP, setHFP] = useState(HomeFeaturedPosts);
   const [Reviews, setReviews] = useState(ReviewsData);
+  const [headlines, setHeadlines] = useState([]);
+
+  useEffect(() => {
+    var url = 'https://newsapi.org/v2/top-headlines?' +
+          'country=in&' +
+          'apiKey=f74c794881074467a22c7014c33e58eb';
+    var req = new Request(url);
+    fetch(req)
+    .then(response => response.json())
+    .then(json => {
+      setHeadlines(json.articles);
+      console.log(json.articles);
+    });
+  })
 
   const Homepage = () => {
     return(
-      <Home count='5' news={news.filter((news) => news.category === 'news')} tech={news.filter((news) => news.category === 'technology')}  etnews={news.filter((news) => news.category === 'entertainment')} spnews={news.filter((news) => news.category === 'sports')} imgad={ImgAd} featured={HFP} reviews={Reviews} />
+      <Home count='5' headlines={headlines ? headlines : null} news={news.filter((news) => news.category === 'news')} tech={news.filter((news) => news.category === 'technology')}  etnews={news.filter((news) => news.category === 'entertainment')} spnews={news.filter((news) => news.category === 'sports')} imgad={ImgAd} featured={HFP} reviews={Reviews} />
+    );
+  }
+  const Headlinespage = () => {
+    return(
+      <News pathValue='headlines' breadCrumbName='Headlines' news={headlines}/>
     );
   }
   const Newspage = () => {
@@ -89,6 +108,7 @@ const Main = () => {
       <Header />
       <Switch>
         <Route exact path="/" component={Homepage} />
+        {headlines ? <Route exact path="/news" component={Headlinespage} /> : null}
         <Route exact path="/news" component={Newspage} />
         <Route exact path="/technology" component={Techpage} />
         <Route path="/news/:newsLink" component={NewsItem} />

@@ -8,6 +8,7 @@ const Footer = () => {
           <div className="col-md-4">
             <h2>Hindustan Daily</h2>
             <span className="text-muted">One stop for information</span>
+            <span className="text-muted">Headlines source: News Api</span>
           </div>
           <div className="col-md-4">
             <h5>Useful links</h5>

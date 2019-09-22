@@ -18,6 +18,8 @@ import {ReviewsData} from '../content/reviews'
 const Main = () => {
 
   const [news, setNews] = useState(NewsData);
+  const [sportsNews, setSportsNews] = useState([]);
+  const [entertainmentNews, setEntertainmentNews] = useState([]);
   const [ImgAd, setImgAd] = useState(BannerAd1);
   const [FestivalMsg, setFestivalMsg] = useState(FestivalMessage);
   const [HFP, setHFP] = useState(HomeFeaturedPosts);
@@ -35,11 +37,31 @@ const Main = () => {
       setHeadlines(json.articles);
       console.log(json.articles);
     });
+    var sportUrl = 'https://newsapi.org/v2/top-headlines?' +
+          'country=in&category=sports&' +
+          'apiKey=f74c794881074467a22c7014c33e58eb';
+    var sportsReq = new Request(sportUrl);
+    fetch(sportsReq)
+    .then(responsedata => responsedata.json())
+    .then(data => {
+      setSportsNews(data.articles);
+      console.log(data.articles);
+    });
+    var entertainmentUrl = 'https://newsapi.org/v2/top-headlines?' +
+          'country=in&category=entertainment&' +
+          'apiKey=f74c794881074467a22c7014c33e58eb';
+    var entertainmentReq = new Request(entertainmentUrl);
+    fetch(entertainmentReq)
+    .then(responsedata => responsedata.json())
+    .then(data => {
+      setEntertainmentNews(data.articles);
+      console.log(data.articles);
+    });
   },[])
 
   const Homepage = () => {
     return(
-      <Home count='5' headlines={headlines ? headlines : null} news={news.filter((news) => news.category === 'news')} tech={news.filter((news) => news.category === 'technology')}  etnews={news.filter((news) => news.category === 'entertainment')} spnews={news.filter((news) => news.category === 'sports')} imgad={ImgAd} featured={HFP} reviews={Reviews} />
+      <Home count='5' headlines={headlines ? headlines : null} news={news.filter((news) => news.category === 'news')} tech={news.filter((news) => news.category === 'technology')}  etnews={entertainmentNews ? entertainmentNews : null } spnews={sportsNews ? sportsNews : null} imgad={ImgAd} featured={HFP} reviews={Reviews} />
     );
   }
   const Headlinespage = () => {
@@ -59,12 +81,12 @@ const Main = () => {
   }
   const Entertainmentpage = () => {
     return(
-      <News pathValue='entertainment' breadCrumbName='Entertainment' news={news.filter((news) => news.category === 'entertainment')}/>
+      <News pathValue='entertainment' breadCrumbName='Entertainment' news={entertainmentNews}/>
     );
   }
   const Sportspage = () => {
     return(
-      <News pathValue='sports' breadCrumbName='Sports' news={news.filter((news) => news.category === 'sports')}/>
+      <News pathValue='sports' breadCrumbName='Sports' news={sportsNews}/>
     );
   }
 

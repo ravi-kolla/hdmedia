@@ -24,6 +24,11 @@ const Home = (props) => {
             <TopNews title='Entertainment' pathValue='entertainment' breadCrumbName='Entertainment' news={props.etnews} count={props.count} />
           </Col>
           <Col md="6" lg="4">
+            <div className="widget_wrap">
+              <iframe className="widget_frame" src="https://www.zomato.com/widgets/res_search_widget.php?entity_id=6&entity_type=city&city_id=6&theme=red&sort=popularity" border="0" frameborder="0"></iframe>
+            </div>
+          </Col>
+          <Col md="6" lg="4">
             <TopNews title='Sports' pathValue='sports' breadCrumbName='Sports'  news={props.spnews} count={props.count}/>
           </Col>
           <Col md="6" lg="4">

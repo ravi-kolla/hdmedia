@@ -121,3 +121,14 @@ z-index:1030;
   width:100%;
   background-color:#fff;
 }
+.widget_wrap {
+  margin-top:20px;
+  width:320px;
+  height:430px;
+  display:inline-block;
+}
+.widget_frame {
+  position:relative;
+  width:100%;
+  height:100%;
+}

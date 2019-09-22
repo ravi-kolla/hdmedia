@@ -35,7 +35,7 @@ const Main = () => {
       setHeadlines(json.articles);
       console.log(json.articles);
     });
-  })
+  },[])
 
   const Homepage = () => {
     return(

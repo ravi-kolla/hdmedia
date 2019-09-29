@@ -1,5 +1,18 @@
 export const FestivalMessage = [
     {
+      id: 3,
+      title: 'Happy Birthday Ramya!',
+      alt: 'Happy Birthday Ramya',
+      thumbnail: '/images/EEE24334-AA5C-4B52-A4F2-3CDB573811C2.jpeg',
+      banner: '/images/EEE24334-AA5C-4B52-A4F2-3CDB573811C2.jpeg',
+      description: "wish you a very happy 24th birthday and I wish you a happy life ahead.",
+      details: "",
+      moredetails: "",
+      author: 'Teja',
+      urlname: 'ramya',
+      category: 'celebrate',
+      date: 'Sep 28, 2019.'
+    },{
       id: 2,
       title: 'Chandrayaan 2 set to land on Moon',
       alt: 'Chandrayaan 2 set to land on moon',

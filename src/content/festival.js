@@ -1,5 +1,18 @@
 export const FestivalMessage = [
     {
+      id: 4,
+      title: '30 వ వివాహ వార్షికోత్సవ శుభాకాంక్షలు అమ్మ మరియు నాన్న.',
+      alt: '30 వ వివాహ వార్షికోత్సవ శుభాకాంక్షలు అమ్మ మరియు నాన్న',
+      thumbnail: '/images/BB4E840C-2C02-42F4-8D67-6E783F9D2CB4.jpeg',
+      banner: '/images/BB4E840C-2C02-42F4-8D67-6E783F9D2CB4.jpeg',
+      description: "",
+      details: "",
+      moredetails: "Thank you for everything you've done!",
+      author: 'Teja',
+      urlname: 'love30',
+      category: 'celebrate',
+      date: 'Sep 29, 2019.'
+    },{
       id: 3,
       title: 'Happy Birthday Ramya!',
       alt: 'Happy Birthday Ramya',
